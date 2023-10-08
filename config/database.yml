@@ -1,0 +1,26 @@
+base: &base
+  adapter: <%= ENV["DB_ADAPTER"] %>
+  pool: 10
+  timeout: 160
+
+development:
+  adapter: <%= ENV["DB_ADAPTER"] %>
+  host: <%= ENV["DB_HOST"] %>
+  port: <%= ENV["DB_PORT"] %>
+  database: <%= ENV["ACME_TEST_DBNAME"] %>
+  username: <%= ENV["ACME_TEST_DB_USER"] %>
+  password: <%= ENV["ACME_TEST_DB_PASSWORD"] %>
+  prepared_statements: false
+  pool: 10
+  timeout: 160
+
+production:
+  adapter: <%= ENV["DB_PG_ADAPTER"] %>
+  host: <%= ENV["DB_HOST"] %>
+  port: <%= ENV["DB_PORT"] %>
+  database: <%= ENV["DB_NAME"] %>
+  username: <%= ENV["DB_USERNAME"] %>
+  password: <%= ENV["DB_PASSWORD"] %>
+  prepared_statements: false
+  pool: 10
+  timeout: 160

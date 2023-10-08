@@ -1,0 +1,21 @@
+AllCops:
+  NewCops: disable
+  TargetRubyVersion: 3.0
+  SuggestExtensions: false
+  Exclude:
+    - 'config/*'
+    - 'db/*'
+    - 'db/migrate/*'
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/MethodLength:
+  CountAsOne: ['array', 'heredoc', 'hash']
+  Max: 20
+
+Layout/LineLength:
+  Enabled: false
+
+Style/GlobalVars:
+  Enabled: false

@@ -1,0 +1,16 @@
+# frozen_string_literal: true
+
+root = ::File.dirname(__FILE__)
+require ::File.join(root, 'helpers/paginator')
+require ::File.join(root, 'helpers/input_validator')
+require ::File.join(root, 'helpers/logger')
+require ::File.join(root, 'base')
+require ::File.join(root, 'manager')
+require ::File.join(root, 'gen/make_payment')
+require ::File.join(root, 'contact_us/contact_us')
+require ::File.join(root, 'gen/main')
+require ::File.join(root, 'more')
+require ::File.join(root, 'paginate')
+require ::File.join(root, 'mce/request_loan')
+require ::File.join(root, 'mce/loan_repayment')
+require ::File.join(root, 'shows/e_ticket')
